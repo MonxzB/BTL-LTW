@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="BTL_LTW.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/master.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.1.2-web/css/all.min.css">
+    <title>H-Survey</title>
+</head>
+<body>
+    <div class="myBody">
+        <!-- Phần menu -->
+        <header>
+            <a href="Trangchu.aspx"><img src="image/logo.png" alt=""><span style="color:#783A92 ">H-Survey</span></a>
+            <nav>
+                <ul class="menuNgang">
+                    <li><a href="Trangchu.aspx"><i class="fa-solid fa-house-user"></i>Trang chủ</a></li>
+                    <li><a href="Gioithieu.aspx">Giới thiệu</a></li>
+                    <li><a href="Dichvu.aspx">Dịch vụ</a></li>
+                    <li><a href="Tintuc.aspx">Tin tức</a></li>
+                    <li><a href="Lienhe.aspx">Liên hệ</a></li>
+                    <li class="dropdown">
+                        <i class="fa-solid fa-user"></i><button id="dropbtn">Tài khoản<i class="fa-solid fa-caret-down" style="margin-left: 5px;"></i></button>
+                        <div id="drd-content">
+                            <a href="login.aspx"><i class="fa-solid fa-right-to-bracket"></i>Đăng nhập</a>
+                            <a href="regis.aspx"><i class="fa-solid fa-registered"></i>Đăng ký</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--Phần content-->
+        <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+        <!-- Phần Footer -->
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
